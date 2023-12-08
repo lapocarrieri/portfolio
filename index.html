@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Lapo Carrieri</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Lapo Carrieri</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Lapo Carrieri profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Lapo Carrieri</h1>
+        <p class="section__text__p2">Robotics Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-2 project-btn" 
+          onclick="location.href='Contactinfo.html'">
+            Contact Info
+          </button>
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/portfolio.pdf')"
+          >
+            Download Portfolio
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/lapo-carrieri/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/lapocarrieri'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1 year internship <br />PLC Programmer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Double Degree in Automation Engineering<br />M.Sc. Master in Robotics and Artificial Intelligence</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                Robotics Engineer innovator versed in independent and team-based
+                projects to enhance research, design, development and testing of
+                robotic systems through the use of AI and Machine Learning. Strong
+                background in artificial intelligence and robotics and a deep
+                understanding of programming languages. Excellent resilience,
+                resourcefulness and data analytics skills useful in code debugging
+                and project management.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Ros</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Matlab</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Prolog</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pytorch and Tensorflow</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Subjects</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Robotics</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Artificial Intelligence</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                    <h3>Automation</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                <div>
+                  <h3>Controls</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Projects</h1>
+        <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project 1</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/lapocarrieri/Math-helper-robot'"
+              >
+                Github
+              </button>
+              <button 
+              class="btn btn-color-2 project-btn" 
+              onclick="location.href='project1.html'">Live Demo</button>
+            </div>
+          </div>
+<div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project 2</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/lapocarrieri/Planar-Monocular-Slam-project'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='project_demo2.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+<div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project 3</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/lapocarrieri/Lift-control-scheme-with-PLC'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='project_demo3.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+<div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-4.png"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project 4</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/lapocarrieri/Simulink-scheme-ofan-Electric-Drive-'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='project_demo4.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+<div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-5.png"
+                alt="Project 5"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project 5</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='project_demo5.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+<div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-6.png"
+                alt="Project 6"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project 6</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/lapocarrieri/Robust-collision-detection-and-isolation'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='project_demo6.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+<div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-7.png"
+                alt="Project 7"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project 7</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/lapocarrieri/Robot-prograaming-project_icp-localization'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='project_demo7.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+<div class="details-container color-container">
+            <div class="article-container">
+  <video width="320" height="240" controls>
+    <source src="./assets/project-8.mp4" type="video/mp4">
+    ù
+  </video>
+</div>
+            <h2 class="experience-sub-title project-title">Project 8</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='project_demo8.html'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div></section>
+          <div style="clear: both;"></div>
+<div class="details-container color-container">
+      <div class="article-container">
+        <img
+          src="./assets/project-9.gif"
+          alt="Project 6"
+          class="project-img"
+        />
+      </div>
+      <h2 class="experience-sub-title project-title">Project 9</h2>
+      <div class="btn-container">
+        <button
+          class="btn btn-color-2 project-btn"
+          onclick="location.href='https://github.com/Colonna17/Collision_Avoidance-Sapienza_Vision_and_Perception'"
+        >
+          Github
+        </button>
+        <button
+          class="btn btn-color-2 project-btn"
+          onclick="location.href='project_demo9.html'"
+        >
+          Live Demo
+        </button>
+      </div>
+</div>
+<div class="details-container color-container">
+  <div class="article-container">
+    <img
+      src="./assets/project-10.png"
+      alt="Project 6"
+      class="project-img"
+    />
+  </div>
+  <h2 class="experience-sub-title project-title">Project 10</h2>
+  <div class="btn-container">
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://github.com/lapocarrieri/Product-phasing-control-lgorithm-for-conveyor-belt-in-logistic-application/tree/main'"
+ >
+      Github
+    </button>
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='project_demo10.html'"
+    >
+      Live Demo
+    </button>
+  </div>
+</div>
+</section>
+<section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:lapo.carrieri@gmail.com">lapo.carrieri@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/lapo-carrieri/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Lapo Carrieri. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
